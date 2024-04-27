@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    padding: 26px;
+    padding-bottom: 31px;
     text-align: center;
     font-size: 24px;
     font-family: 'EB Garamond', sans-serif;
@@ -98,7 +98,7 @@ article {
     background-image: none;
 }
 
-footer {
+/* footer {
     background-color: #f8f7ee;
     padding: 10px;
     text-align: center;
@@ -110,6 +110,23 @@ footer {
     margin: 0 auto;
     padding: 20px;
     
+  } */
+
+  footer {
+    padding: 15px 0; /* reduce padding to make the footer smaller */
+    background-color: #f8f7ee;
+    font-size: 12px; /* reduce font size to make the text smaller */
+    line-height: 2; /* reduce line height to make the text more compact */
+  }
+  
+  .footer-container {
+    display: flex; /* make the container a flexbox to center the content */
+    flex-direction: column; /* stack the content vertically */
+    align-items: center; /* center the content horizontally */
+  }
+  
+  .footer-container p {
+    margin: 0; /* remove margin to make the text more compact */
   }
   
   .scroll-to-top {
@@ -137,4 +154,3 @@ footer {
   {
     color: #b31b1b;
   }
-
