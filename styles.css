@@ -116,7 +116,7 @@ article {
     padding: 15px 0; /* reduce padding to make the footer smaller */
     background-color: #f8f7ee;
     font-size: 12px; /* reduce font size to make the text smaller */
-    line-height: 2; /* reduce line height to make the text more compact */
+    line-height: 4; /* reduce line height to make the text more compact */
   }
   
   .footer-container {
