@@ -3,4 +3,4 @@ The blog site soon, going to be connnected to the main portfolio, the site map w
 ----Main portfolio (About page)
 -------Contact form 
 -------The Zero days of life
--------Fun Space (will be open to change, hacks stuff etc. bascially ripping off other people personal space.")
+-------Fun Space (will be open to change, hacks stuff etc. bascially ripping off other people minds")
