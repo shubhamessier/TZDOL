@@ -1,4 +1,4 @@
-The blog site soon, going to be connnected to the main portfolio, the site map will be as follows:
+This blog site is soon going to be connnected to the main portfolio, the site map will be as follows:
 
 ----Main portfolio (About page)
 -------Contact form 
