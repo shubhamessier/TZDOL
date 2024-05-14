@@ -18,7 +18,7 @@ app.addEventListener("click", function (event) {
 });
 
 async function open_terminal() {
-  createText("Welcome to the Matrix");
+  createText("Welcome to the subconscious");
   await delay(700);
   createText("Starting the server...");
   await delay(1500);
