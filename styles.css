@@ -154,3 +154,48 @@ article {
   {
     color: #b31b1b;
   }
+
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  main {
+    max-width: 900px;
+  }
+  #post-container {
+    max-width: 900px;
+  }
+}
+
+/* Small screens (mobiles) */
+@media only screen and (max-width: 767px) {
+  main {
+    max-width: 600px;
+  }
+  #post-container {
+    max-width: 600px;
+  }
+  .post-image {
+    width: 100%;
+  }
+}
+
+/* Extra small screens (small mobiles) */
+@media only screen and (max-width: 479px) {
+  main {
+    max-width: 400px;
+  }
+  header {
+    font-size: 18px;
+  }
+  #post-container {
+    max-width: 400px;
+  }
+  .post-image {
+    width: 100%;
+  }
+  body {
+    margin: 8px;
+  }
+
+  article {
+    padding: 5px;
+  }
+}
