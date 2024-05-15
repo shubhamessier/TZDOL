@@ -84,33 +84,15 @@ article {
 }
 
 p {
-  font-size: 12px;
+  font-size: 14px;
   margin-bottom: 20px;
   line-height: 1.5;
   color: #333;
 }
 
-header::after {
-  display: none;
-}
-
 article {
   background-image: none;
 }
-
-/* footer {
-  background-color: #f8f7ee;
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-}
-
-.footer-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  
-} */
 
 footer {
   padding: 15px 0; /* reduce padding to make the footer smaller */
@@ -155,76 +137,99 @@ footer {
   color: #b31b1b;
 }
 
-@media only screen and (max-width: 1900px) {
+/* Media queries for responsive design */
+
+/* Small screens (mobiles) */
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   body {
-    margin: 13px;
+    font-size: 18px;
+    margin: 30px;
   }
-
   header {
-    font-size: 26px;
-    margin: 0px;
+    font-size: 20px;
+    padding-bottom: 25px;
   }
-
+  main {
+    padding: 15px;
+  }
   #post-container {
-    max-height: 85vh;
+    max-width: 100%;
+    padding: 15px;
+    max-height: 90%;
   }
-
-  .post-meta {
-    margin-bottom: 5px;
+  article {
+    padding: 15px;
   }
-
-  .post-date,
-  .post-time {
-    font-size: 12px;
-  }
-
   .post-quote {
+    font-size: 17px;
+  }
+  p {
+    font-size: 13px;
+  }
+  footer {
+    padding: 12px 0;
+  }
+  .footer-container p {
+    font-size: 11px;
+  }
+  .search-container {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  #searchInput {
+    width: 250px;
+    font-size: 13px;
+  }
+  #searchButton {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+}
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 20px;
+    margin: 40px;
+  }
+  header {
+    font-size: 24px;
+    padding-bottom: 31px;
+  }
+  main {
+    padding: 20px;
+  }
+  #post-container {
+    max-width: 900px;
+    padding: 20px;
+  }
+  article {
+    padding: 20px;
+  }
+  .post-quote {
+    font-size: 18px;
+  }
+  p {
     font-size: 14px;
   }
-
-  p {
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-
   footer {
+    padding: 15px 0;
+  }
+  .footer-container p {
     font-size: 12px;
-    line-height: 1.2;
   }
-
+  .search-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   #searchInput {
-    width: 70%;
+    width: 300px;
+    font-size: 14px;
   }
-}
-
-
-
-.search-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#searchInput {
-  padding: 8px 12px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 300px;
-}
-
-#searchButton {
-  background-color: #337ab7;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  font-size: 14px;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-left: 8px;
-}
-
-#searchButton:hover {
-  background-color: #23527c;
+  #searchButton {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
 }
