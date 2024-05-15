@@ -161,6 +161,7 @@ article {
   }
   #post-container {
     max-width: 900px;
+    max-height: 700px;
   }
 }
 
@@ -172,30 +173,17 @@ article {
   #post-container {
     max-width: 600px;
   }
-  .post-image {
-    width: 100%;
-  }
-}
 
-/* Extra small screens (small mobiles) */
-@media only screen and (max-width: 479px) {
-  main {
-    max-width: 400px;
-  }
-  header {
-    font-size: 18px;
-  }
   #post-container {
-    max-width: 400px;
+    max-height: 1150px;
+  }
+  p {
+    font-size: 11px;
   }
   .post-image {
     width: 100%;
   }
-  body {
-    margin: 8px;
-  }
-
-  article {
-    padding: 5px;
+  footer {
+    font-size: 14px;
   }
 }
