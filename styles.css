@@ -159,23 +159,31 @@ footer {
 /* Small screens (mobiles) */
 @media only screen and (max-width: 1199px) {
   main {
-    max-width: 600px;
+    max-width: 700px;
   }
   #post-container {
-    max-width: 600px;
+    max-width: 700px;
   }
 
   #post-container {
     max-height: 1150px;
+    margin: 10px;
   }
   p {
-    font-size: 9px;
+    font-size: 14px;
+    font-family: "DM Sans", sans-serif;
+  }
+
+  header {
+    font-size: 24px;
+    font-weight: 400px;
   }
   .post-image {
     width: 100%;
   }
   footer {
     font-size: 14px;
+    margin-bottom: 5px;
   }
 }
 
