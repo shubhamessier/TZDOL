@@ -34,20 +34,13 @@ async function open_terminal() {
 }
 
 function new_line() {
-  const p = document.createElement("p");
-  const span1 = document.createElement("span");
-  const span2 = document.createElement("span");
-  p.setAttribute("class", "path");
-  p.textContent = "Shubham@linux-desktop:~$";
-  p.appendChild(span1);
-  p.appendChild(span2);
-  app.appendChild(p);
   const div = document.createElement("div");
   div.setAttribute("class", "type");
-  const i = document.createElement("i");
-  i.setAttribute("class", "fas fa-angle-right icone");
+  const span = document.createElement("span");
+  span.setAttribute("class", "path");
+  span.textContent = "shubham@linux-desktop:~$";
   const input = document.createElement("input");
-  div.appendChild(i);
+  div.appendChild(span);
   div.appendChild(input);
   app.appendChild(div);
   input.focus();
