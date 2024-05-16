@@ -164,7 +164,7 @@ footer {
     margin-right: 3%;
     padding-bottom: 6%;
     text-align: center;
-    font-size: 25px;
+    font-size: 130%;
     font-family: "EB Garamond", sans-serif;
     max-width: 100%;
     margin: 0 auto;
@@ -191,7 +191,7 @@ footer {
   #post-container {
     overflow-y: auto;
     max-height: 80vh;
-    max-width: 100%;
+    max-width: 87%;
     padding: 2.7%;
     margin-left: 2%;
     margin-right: 2%;
@@ -234,7 +234,7 @@ footer {
   }
 
   .post-quote {
-    font-size: 14px;
+    font-size: 13px;
     font-style: italic;
     color: #337ab7;
     margin-bottom: 10px;
@@ -255,9 +255,9 @@ footer {
     padding: 10px 0;
     background-color: #f8f7ee;
     position: bottom;
-    font-size: 17px;
-    line-height: 4;
-    margin-top: 5%;
+    font-size: 22px;
+    line-height: 5;
+    margin-top: 3.7%;
   }
 
   .footer-container {
