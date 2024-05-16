@@ -161,14 +161,23 @@ h2 {
   color: rgb(238, 238, 238);
 }
 
-p.code {
-  color: #ffffff;
+.code-container {
+  display: flex;
+  flex-direction: column;
   margin-left: 8px;
 }
 
-span.text {
-  margin-left: 16px;
+.code-text {
+  color: #ffffff;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+}
+
+.text {
   color: white;
+  font-family: "Fira Code", monospace;
+  font-size: 14px;
+  margin-left: 0px;
 }
 
 p.path {
@@ -184,14 +193,6 @@ p.path span {
 
 p.path span + span {
   color: #9ceaf3;
-}
-
-.sucess {
-  color: #5ad786;
-}
-
-.error {
-  color: #f78f85;
 }
 
 p.response {
@@ -228,4 +229,24 @@ input:focus {
   font-size: 14px;
   white-space: nowrap;
   overflow: visible;
+}
+
+.type .response p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgb(238, 238, 238);
+}
+
+.error-message {
+  color: red;
+  background-color: #212121;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.error-message i {
+  margin-right: 5px;
 }

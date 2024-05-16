@@ -24,10 +24,13 @@ async function open_terminal() {
   await delay(1500);
   createText("You can run several commands:");
 
-  createCode("about me", "Who am i and what do i do.");
-  createCode("all", "See all commands.");
-  createCode("social -a", "All my social networks.");
-  createCode("?", "?");
+  createCode("about me", "");
+  createCode("all", "");
+  createCode("social -a", "");
+  createCode("?", "");
+  createCode("projects", "");
+  // createCode("psyduck")
+
 
   await delay(500);
   new_line();
@@ -124,29 +127,11 @@ async function getInputValue() {
 }
 
 function trueValue(value) {
-  const div = document.createElement("section");
-  div.setAttribute("class", "type2");
-  const i = document.createElement("i");
-  i.setAttribute("class", "fas fa-angle-right icone");
-  const mensagem = document.createElement("h2");
-  mensagem.setAttribute("class", "sucess");
-  mensagem.textContent = `${value}`;
-  div.appendChild(i);
-  div.appendChild(mensagem);
-  app.appendChild(div);
+  createText(`shubham@linux-desktop:~$ ${value}`, "sucess");
 }
 
 function falseValue(value) {
-  const div = document.createElement("section");
-  div.setAttribute("class", "type2");
-  const i = document.createElement("i");
-  i.setAttribute("class", "fas fa-angle-right icone error");
-  const mensagem = document.createElement("h2");
-  mensagem.setAttribute("class", "error");
-  mensagem.textContent = `${value}`;
-  div.appendChild(i);
-  div.appendChild(mensagem);
-  app.appendChild(div);
+  createText(`shubham@linux-desktop:~$ ${value}`, "error");
 }
 
 function createText(text, classname) {
@@ -160,9 +145,18 @@ function createText(text, classname) {
 }
 
 function createCode(code, text) {
-  const p = document.createElement("p");
-  p.setAttribute("class", "code");
-  app.appendChild(p);
+  const codeDiv = document.createElement("div");
+  codeDiv.setAttribute("class", "code-container");
+
+  const codeElement = document.createElement("span");
+  codeElement.setAttribute("class", "code-text");
+  codeDiv.appendChild(codeElement);
+
+  const textElement = document.createElement("span");
+  textElement.setAttribute("class", "text");
+  codeDiv.appendChild(textElement);
+
+  app.appendChild(codeDiv);
 
   const codeWords = code.split("");
   const textWords = text.split("");
@@ -172,14 +166,14 @@ function createCode(code, text) {
 
   const codeInterval = setInterval(() => {
     if (codeIndex < codeWords.length) {
-      p.innerHTML += codeWords[codeIndex];
+      codeElement.textContent += codeWords[codeIndex];
       codeIndex++;
     } else {
       clearInterval(codeInterval);
-      p.innerHTML += "<br/>";
+      codeElement.textContent += "\n";
       const textInterval = setInterval(() => {
         if (textIndex < textWords.length) {
-          p.querySelector(".text").innerHTML += textWords[textIndex];
+          textElement.textContent += textWords[textIndex];
           textIndex++;
         } else {
           clearInterval(textInterval);
