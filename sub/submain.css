@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu Sans";
+  font-weight: 600;
 }
 
 ::-webkit-scrollbar-track {
@@ -164,7 +166,7 @@ h2 {
 .code-container {
   display: flex;
   flex-direction: column;
-  margin-left: 8px;
+  margin-left: 0px;
 }
 
 .code-text {
@@ -177,7 +179,6 @@ h2 {
   color: white;
   font-family: "Fira Code", monospace;
   font-size: 14px;
-  margin-left: 0px;
 }
 
 p.path {

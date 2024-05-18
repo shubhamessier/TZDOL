@@ -18,9 +18,9 @@ app.addEventListener("click", function (event) {
 });
 
 async function open_terminal() {
-  createText("Welcome to the subconscious");
+  createText("Welcome to the subconscious!");
   await delay(700);
-  createText("Starting the server...");
+  createText("Follow the white rabbit...");
   await delay(1500);
   createText("You can run several commands:");
 
@@ -30,7 +30,6 @@ async function open_terminal() {
   createCode("?", "");
   createCode("projects", "");
   // createCode("psyduck")
-
 
   await delay(500);
   new_line();
@@ -96,7 +95,7 @@ async function getInputValue() {
     trueValue(value);
     createText("Ah I see you wanna know more of me.");
     createText(
-      "I've been a active participant in different technical contests such as Techfest IITB, Ideathon IITJ and others, I'm the author of the blog, The Zero Days of Life, which is my personal blog about technology, life and my challenges. I believe Hacking is the most beautiful art in computer science, it liberates one's need of dependence on society and allows to work more openly. I am heavily inspired by my chilhood heroes, such as Linus, Kevin Mitnick, Snowden etc. Also I am a believer of open source, thus the ubuntu terminal."
+      "I've been a active participant in different technical contests such as Techfest IITB, Ideathon IITJ and others, I'm the author of the blog, The Zero Days of Life, which is my personal blog about technology, life, relationships and my challenges. Also I believe Hacking is the most beautiful art in computer science, it liberates one's need on society and allows to work more openly, to get into places, to modify them and make their own. I am heavily inspired by my chilhood heroes, such as Linus, Kevin Mitnick, Snowden etc. I am a believer of open source, thus the ubuntu terminal."
     );
   } else if (value === "social -a") {
     trueValue(value);
@@ -111,6 +110,9 @@ async function getInputValue() {
     );
     createText(
       "<a href='https://shubhamessier.github.io/TZDOL/' target='_blank'><i class='fab fa-github white'></i> The Zero Days of Life</a>"
+    );
+    createText(
+      "<a href='https://www.x.com/0xshubhamgaur' target='_blank'><i class='fab fa-linkedin-in white'></i> linkedin.com/in/shubhamgaur10</a>"
     );
   } else if (value === "social") {
     trueValue(value);
@@ -127,11 +129,11 @@ async function getInputValue() {
 }
 
 function trueValue(value) {
-  createText(`shubham@linux-desktop:~$ ${value}`, "sucess");
+  createText(`shubham@linux-desktop:~$ ${value}`);
 }
 
 function falseValue(value) {
-  createText(`shubham@linux-desktop:~$ ${value}`, "error");
+  createText(`shubham@linux-desktop:~$ ${value}`);
 }
 
 function createText(text, classname) {
