@@ -62,7 +62,7 @@ main {
   flex-direction: column;
   align-items: center;
   padding: 0.9375rem; /* 15px */
-  max-width: 68.75rem; /* 1100px */
+  max-width: 67.75rem; /* 1100px */
   margin: 0.125rem auto; /* 2px */
   overflow-y: auto;
   height: 100vh;
@@ -71,7 +71,7 @@ main {
 #post-container {
   overflow-y: auto;
   max-height: 80vh;
-  max-width: 68.75rem; /* 1100px */
+  max-width: 66.75rem; /* 1100px */
   padding: 1.25rem; /* 20px */
   border-radius: 0.625rem; /* 10px */
   box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.05); /* 0 0 10px */
