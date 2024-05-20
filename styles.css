@@ -2,6 +2,24 @@
   margin-top: 20px;
 }
 
+.image {
+  width: 90%;
+  height: 80%;
+  max-width: 690px; /* Adjust the max width as needed */
+  height: 450px; /* Set a fixed height to crop vertically */
+  object-fit: cover; /* Crop the image to fit the container */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  display: block;
+  margin: 35px auto; /* Center the image and add some margin */
+}
+
+.image:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
 article {
   margin-bottom: 20px;
   padding: 20px;
@@ -150,7 +168,18 @@ footer {
 }
 
 /* Desktop styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
+  .image {
+    width: 100%;
+    max-width: 100%; /* Remove max-width for better responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px auto; /* Adjust margin for smaller screens */
+  }
+
+  .image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  }
   body {
     font-family: "DM Sans", sans-serif;
     margin: 2%;
@@ -159,12 +188,9 @@ footer {
   }
 
   header {
-    padding-top: 3%;
-    margin-left: 3%;
-    margin-right: 3%;
-    padding-bottom: 6%;
+    padding: 3% 3% 6% 3%;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     font-family: "EB Garamond", sans-serif;
     max-width: 100%;
     margin: 0 auto;
@@ -185,20 +211,17 @@ footer {
     margin: 3%;
     overflow-y: auto;
     height: 100vh;
-    padding: 15px;
   }
 
   #post-container {
     overflow-y: auto;
-    max-height: 80vh;
+    max-height: 75vh;
     max-width: 100%;
     padding: 2.7%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     background-color: #f7f7f7;
-    margin: 0 auto;
     font-family: "DM Sans", sans-serif;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -247,14 +270,9 @@ footer {
     color: #333;
   }
 
-  article {
-    background-image: none;
-  }
-
   footer {
     padding: 10px 0;
     background-color: #f8f7ee;
-    position: bottom;
     font-size: 17px;
     line-height: 4;
     margin-top: 3.7%;
