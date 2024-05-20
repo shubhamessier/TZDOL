@@ -251,3 +251,99 @@ input:focus {
 .error-message i {
   margin-right: 5px;
 }
+
+@media (max-width: 800px) {
+  .menu h1 {
+    font-size: 12px;
+  }
+
+  .container {
+    height: auto;
+    max-height: 100vh;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .buttons-flex {
+    margin-left: auto;
+  }
+
+  #app {
+    padding: 4px;
+  }
+
+  p,
+  .code-text,
+  .text,
+  p.path,
+  .type .response p {
+    font-size: 12px;
+  }
+
+  input {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .type {
+    padding: 10px 0;
+  }
+
+  .file-bar li {
+    margin-left: 6px;
+  }
+}
+
+@media (max-width: 500px) {
+  .menu h1 {
+    font-size: 11px;
+  }
+
+  .container {
+    height: auto;
+    max-height: 100vh;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 4px;
+  }
+
+  .buttons-flex {
+    margin-left: auto;
+  }
+
+  .menu {
+    padding: 0 6px;
+  }
+
+  .menu .button {
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+  }
+
+  #app {
+    padding: 4px;
+  }
+
+  p,
+  .code-text,
+  .text,
+  p.path,
+  .type .response p {
+    font-size: 11px;
+  }
+
+  input {
+    font-size: 11px;
+    padding: 3px;
+  }
+
+  .type {
+    padding: 8px 0;
+  }
+
+  .file-bar li {
+    margin-left: 4px;
+  }
+}
