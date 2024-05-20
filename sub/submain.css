@@ -252,7 +252,7 @@ input:focus {
   margin-right: 5px;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .menu h1 {
     font-size: 12px;
   }
@@ -346,4 +346,4 @@ input:focus {
   .file-bar li {
     margin-left: 4px;
   }
-}
+} */
