@@ -3,10 +3,10 @@
 }
 
 .image {
-  width: 90%;
-  height: 80%;
+  width: 100%;
   max-width: 690px; /* Adjust the max width as needed */
-  height: 450px; /* Set a fixed height to crop vertically */
+  height: auto; /* Allow height to adjust based on the width */
+  aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio for a horizontal appearance */
   object-fit: cover; /* Crop the image to fit the container */
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
