@@ -1,32 +1,34 @@
 :root {
-  font-size: 16px; /* Assuming the base font size is 16px */
+  font-size: clamp(14px, 1vw, 18px); /* Assuming the base font size is 16px */
 }
 
 #post-container {
-  margin-top: 1.25rem; /* 20px */
+  margin-top: clamp(1rem, 1.25vw, 1.5rem); /* 20px */
 }
 
 .image {
   width: 100%;
-  max-width: 43.125rem; /* 690px */
+  max-width: clamp(30rem, 43.125vw, 50rem); /* 690px */
   height: auto; /* Allow height to adjust based on the width */
   aspect-ratio: 16 / 9; /* Maintain a 16:9 aspect ratio for a horizontal appearance */
   object-fit: cover; /* Crop the image to fit the container */
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 0 4px 8px */
+  border-radius: clamp(0.5rem, 0.625vw, 0.75rem); /* 10px */
+  box-shadow: 0 clamp(0.25rem, 0.25vw, 0.5rem) clamp(0.5rem, 0.5vw, 1rem)
+    rgba(0, 0, 0, 0.1); /* 0 4px 8px */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
   display: block;
-  margin: 2.1875rem auto; /* 35px */
+  margin: clamp(1.75rem, 2.1875vw, 2.5rem) auto; /* 35px */
 }
 
 .image:hover {
   transform: scale(1.05); /* Slight zoom on hover */
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* 0 8px 16px */
+  box-shadow: 0 clamp(0.5rem, 0.5vw, 1rem) clamp(1rem, 1vw, 1.5rem)
+    rgba(0, 0, 0, 0.2); /* 0 8px 16px */
 }
 
 article {
-  margin-bottom: 1.25rem; /* 20px */
-  padding: 1.25rem; /* 20px */
+  margin-bottom: clamp(1rem, 1.25vw, 1.5rem); /* 20px */
+  padding: clamp(1rem, 1.25vw, 1.5rem); /* 20px */
   border-bottom: 1px solid #ccc;
 }
 
@@ -36,16 +38,15 @@ article:last-child {
 
 body {
   font-family: "DM Sans", sans-serif;
-  margin: 2%;
+  margin: clamp(2%, 2vw, 3%);
   background-color: #f8f7ee;
   overflow-y: auto;
 }
 
 header {
-  padding-bottom: 1.875rem; /* 30px */
+  padding-bottom: clamp(1.5rem, 1.875vw, 2.25rem); /* 30px */
   text-align: center;
-  font-size: 1.375rem; /* 22px */
-  /* font-size: clamp(1.2rem, 2.5vw, 1.7rem); 22px */
+  font-size: clamp(1.2rem, 1.375vw, 1.7rem); /* 22px */
   font-family: "EB Garamond", sans-serif;
   max-width: 90%;
   margin: 0 auto;
@@ -61,9 +62,9 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0.9375rem; /* 15px */
-  max-width: 67.75rem; /* 1100px */
-  margin: 0.125rem auto; /* 2px */
+  padding: clamp(0.75rem, 0.9375vw, 1.125rem); /* 15px */
+  max-width: clamp(50rem, 67.75vw, 75rem); /* 1100px */
+  margin: clamp(0.125rem, 0.125vw, 0.25rem) auto; /* 2px */
   overflow-y: auto;
   height: 100vh;
 }
@@ -71,10 +72,10 @@ main {
 #post-container {
   overflow-y: auto;
   max-height: 80vh;
-  max-width: 66.75rem; /* 1100px */
-  padding: 1.25rem; /* 20px */
-  border-radius: 0.625rem; /* 10px */
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.05); /* 0 0 10px */
+  max-width: clamp(50rem, 66.75vw, 75rem); /* 1100px */
+  padding: clamp(1rem, 1.25vw, 1.5rem); /* 20px */
+  border-radius: clamp(0.5rem, 0.625vw, 0.75rem); /* 10px */
+  box-shadow: 0 0 clamp(0.5rem, 0.625vw, 0.75rem) rgba(0, 0, 0, 0.05); /* 0 0 10px */
   background-color: #f7f7f7;
   margin: 0 auto;
   font-family: "DM Sans", sans-serif;
@@ -88,39 +89,39 @@ main {
 
 article {
   background-color: #f7f7f7;
-  padding: 0.9375rem; /* 15px */
-  margin-bottom: 0.9375rem; /* 15px */
+  padding: clamp(0.75rem, 0.9375vw, 1.125rem); /* 15px */
+  margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem); /* 15px */
   border: none;
-  border-radius: 0.625rem; /* 10px */
+  border-radius: clamp(0.5rem, 0.625vw, 0.75rem); /* 10px */
 }
 
 .post-meta {
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem; /* 8px */
+  margin-bottom: clamp(0.5rem, 0.5vw, 0.6rem); /* 8px */
 }
 
 .post-date {
-  font-size: 0.6875rem; /* 11px */
+  font-size: clamp(0.55rem, 0.6875vw, 0.8rem); /* 11px */
   color: #666;
-  margin-right: 0.5rem; /* 8px */
+  margin-right: clamp(0.5rem, 0.5vw, 0.6rem); /* 8px */
 }
 
 .post-time {
-  font-size: 0.6875rem; /* 11px */
+  font-size: clamp(0.55rem, 0.6875vw, 0.8rem); /* 11px */
   color: #999;
 }
 
 .post-quote {
-  font-size: 1rem; /* 16px */
+  font-size: clamp(0.8rem, 1vw, 1.2rem); /* 16px */
   font-style: italic;
   color: #337ab7;
-  margin-bottom: 0.5rem; /* 8px */
+  margin-bottom: clamp(0.5rem, 0.5vw, 0.6rem); /* 8px */
 }
 
 p {
-  font-size: 0.8125rem; /* 13px */
-  margin-bottom: 0.9375rem; /* 15px */
+  font-size: clamp(0.65rem, 0.8125vw, 0.95rem); /* 13px */
+  margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem); /* 15px */
   line-height: 1.5;
   color: #333;
 }
@@ -130,10 +131,10 @@ article {
 }
 
 footer {
-  padding: 0.75rem 0; /* 12px 0 */
+  padding: clamp(0.6rem, 0.75vw, 0.9rem) 0; /* 12px 0 */
   background-color: #f8f7ee;
   position: bottom;
-  font-size: 0.6875rem; /* 11px */
+  font-size: clamp(0.55rem, 0.6875vw, 0.8rem); /* 11px */
   line-height: 4;
 }
 
@@ -178,24 +179,27 @@ footer {
     width: 100%;
     max-width: 100%; /* Remove max-width for better responsiveness */
     height: auto; /* Maintain aspect ratio */
-    margin: 20px auto; /* Adjust margin for smaller screens */
+    margin: clamp(1.5rem, 2vw, 2.5rem) auto; /* Adjust margin for smaller screens */
   }
 
   .image:hover {
     transform: scale(1.05); /* Slight zoom on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    box-shadow: 0 clamp(0.5rem, 0.8vw, 1rem) clamp(1rem, 1vw, 1.5rem)
+      rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
   }
+
   body {
     font-family: "DM Sans", sans-serif;
-    margin: 3%;
+    margin: clamp(3%, 3vw, 4%);
     background-color: #f8f7ee;
     overflow-y: auto;
   }
 
   header {
-    padding: 3% 3% 6% 3%;
+    padding: clamp(3%, 3vw, 4%) clamp(3%, 3vw, 4%) clamp(6%, 6vw, 8%)
+      clamp(3%, 3vw, 4%);
     text-align: center;
-    font-size: 23px;
+    font-size: clamp(1.2rem, 1.375vw, 1.7rem);
     font-family: "EB Garamond", sans-serif;
     max-width: 100%;
     margin: 0 auto;
@@ -211,9 +215,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: clamp(0.75rem, 0.9375vw, 1.125rem);
     max-width: 100%;
-    margin: 3%;
+    margin: clamp(3%, 3vw, 4%);
     overflow-y: auto;
     height: 100vh;
   }
@@ -222,10 +226,10 @@ footer {
     overflow-y: auto;
     max-height: 75vh;
     max-width: 100%;
-    padding: 2.7%;
+    padding: clamp(2.5%, 2.7vw, 3.5%);
     margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: clamp(0.5rem, 0.625vw, 0.75rem);
+    box-shadow: 0 0 clamp(0.5rem, 0.625vw, 0.75rem) rgba(0, 0, 0, 0.05);
     background-color: #f7f7f7;
     font-family: "DM Sans", sans-serif;
     scrollbar-width: none;
@@ -238,49 +242,49 @@ footer {
 
   article {
     background-color: #f7f7f7;
-    padding: 15px;
-    margin-bottom: 15px;
+    padding: clamp(0.75rem, 0.9375vw, 1.125rem);
+    margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem);
     border: none;
-    border-radius: 10px;
+    border-radius: clamp(0.5rem, 0.625vw, 0.75rem);
   }
 
   .post-meta {
     display: flex;
     align-items: center;
-    margin-bottom: 10px;
+    margin-bottom: clamp(0.5rem, 0.5vw, 0.6rem);
   }
 
   .post-date {
-    font-size: 11px;
+    font-size: clamp(0.55rem, 0.6875vw, 0.8rem);
     color: #666;
-    margin-right: 10px;
+    margin-right: clamp(0.5rem, 0.5vw, 0.6rem);
   }
 
   .post-time {
-    font-size: 12px;
+    font-size: clamp(0.55rem, 0.6875vw, 0.8rem);
     color: #999;
   }
 
   .post-quote {
-    font-size: 14px;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
     font-style: italic;
     color: #337ab7;
-    margin-bottom: 10px;
+    margin-bottom: clamp(0.5rem, 0.5vw, 0.6rem);
   }
 
   p {
-    font-size: 13px;
-    margin-bottom: 15px;
+    font-size: clamp(0.65rem, 0.8125vw, 0.95rem);
+    margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem);
     line-height: 1.5;
     color: #333;
   }
 
   footer {
-    padding: 10px 0;
+    padding: clamp(0.5rem, 0.6vw, 0.75rem) 0;
     background-color: #f8f7ee;
-    font-size: 17px;
+    font-size: clamp(0.55rem, 0.6875vw, 0.8rem);
     line-height: 4;
-    margin-top: 3.7%;
+    margin-top: clamp(3.5%, 3.7vw, 4.5%);
   }
 
   .footer-container {
