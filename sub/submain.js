@@ -85,7 +85,11 @@ async function getInputValue() {
     createText(
       "<a href='https://github.com/shubhamessier' target='_blank'><i class='fab fa-github white'></i> github.com/shubhamessier</a>"
     );
-  } else if (value === "about me") {
+  } else if (
+    value === "about me" ||
+    value === "About" ||
+    value === "About me"
+  ) {
     trueValue(value);
     createText("Namaste");
     createText(
