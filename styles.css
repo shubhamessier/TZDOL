@@ -169,6 +169,10 @@ footer {
   transition: top 0.5s ease-in-out;
 }
 
+#life {
+  font-family: "Covered By Your Grace";
+  color: #23527c;
+}
 #name {
   color: #b31b1b;
 }
