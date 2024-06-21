@@ -1,5 +1,5 @@
 :root {
-  font-size: clamp(14px, 1vw, 18px); /* Assuming the base font size is 16px */
+  font-size: clamp(15px, 1vw, 20px); /* Assuming the base font size is 16px */
 }
 
 #post-container {
@@ -203,7 +203,7 @@ footer {
     padding: clamp(3%, 3vw, 4%) clamp(3%, 3vw, 4%) clamp(6%, 6vw, 8%)
       clamp(3%, 3vw, 4%);
     text-align: center;
-    font-size: clamp(1.2rem, 1.375vw, 1.7rem);
+    font-size: clamp(1.5rem, 1.775vw, 1.9rem);
     font-family: "EB Garamond", sans-serif;
     max-width: 100%;
     margin: 0 auto;
@@ -259,25 +259,25 @@ footer {
   }
 
   .post-date {
-    font-size: clamp(0.55rem, 0.6875vw, 0.8rem);
+    font-size: clamp(0.7rem, 0.85vw, 0.9rem);
     color: #666;
     margin-right: clamp(0.5rem, 0.5vw, 0.6rem);
   }
 
   .post-time {
-    font-size: clamp(0.55rem, 0.6875vw, 0.8rem);
+    font-size: clamp(0.7rem, 0.85vw, 0.9rem);
     color: #999;
   }
 
   .post-quote {
-    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    font-size: clamp(0.9rem, 1vw, 1.3rem);
     font-style: italic;
     color: #337ab7;
     margin-bottom: clamp(0.5rem, 0.5vw, 0.6rem);
   }
 
   p {
-    font-size: clamp(0.65rem, 0.8125vw, 0.95rem);
+    font-size: clamp(0.75rem, 0.85vw, 1rem);
     margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem);
     line-height: 1.5;
     color: #333;
@@ -286,7 +286,7 @@ footer {
   footer {
     padding: clamp(0.5rem, 0.6vw, 0.75rem) 0;
     background-color: #f8f7ee;
-    font-size: clamp(0.55rem, 0.6875vw, 0.8rem);
+    font-size: clamp(0.7rem, 0.7875vw, 1rem);
     line-height: 4;
     margin-top: clamp(3.5%, 3.7vw, 4.5%);
   }
