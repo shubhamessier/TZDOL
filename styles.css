@@ -121,7 +121,7 @@ article {
 
 p {
   font-size: clamp(0.65rem, 0.8125vw, 0.95rem); /* 13px */
-  margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem); /* 15px */
+  margin-bottom: clamp(0.75rem, 0.92vw, 1.125rem); /* 15px */
   line-height: 1.5;
   color: #333;
 }
