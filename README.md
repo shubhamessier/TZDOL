@@ -1,6 +1,6 @@
 # Shubham's Blog!
 
-Hi! Welcome to the Zero Days of Life which is my personal blog where I talk about technology, my experiences and my experiments with life.  Well this came second after my imaginary blog, "The Joy of Programming and The Computing Seduction."
+Hi! Welcome to the Zero Days of Life which is my personal blog where I talk about technology, my experiences and my experiments with life.  Well this came second after my imaginary blog, "The Joy of Programming and The Compute Seduction."
 
     Made using Minimal Tech Stack HTML, CSS, JS (easy to edit) 
 
