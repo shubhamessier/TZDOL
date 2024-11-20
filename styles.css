@@ -161,6 +161,7 @@ footer {
   } /*Light text color*/
   h1 {
     color: #eee;
+    margin-top: 1.3rem;
   } /*Light text color*/
   #post-container {
     background-color: #282828;
