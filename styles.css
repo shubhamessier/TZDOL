@@ -102,25 +102,25 @@ article {
 }
 
 .post-date {
-  font-size: clamp(0.7rem, 0.6875vw, 0.8rem); /* 11px */
+  font-size: clamp(0.55rem, 0.6875vw, 0.8rem); /* 11px */
   color: #666;
   margin-right: clamp(0.5rem, 0.5vw, 0.6rem); /* 8px */
 }
 
 .post-time {
-  font-size: clamp(0.7rem, 0.6875vw, 0.8rem); /* 11px */
+  font-size: clamp(0.55rem, 0.6875vw, 0.8rem); /* 11px */
   color: #999;
 }
 
 .post-quote {
-  font-size: clamp(0.9rem, 1vw, 1.2rem); /* 16px */
+  font-size: clamp(0.8rem, 1vw, 1.2rem); /* 16px */
   font-style: italic;
   color: #337ab7;
   margin-bottom: clamp(0.5rem, 0.5vw, 0.6rem); /* 8px */
 }
 
 p {
-  font-size: clamp(0.7rem, 0.8125vw, 0.95rem); /* 13px */
+  font-size: clamp(0.65rem, 0.8125vw, 0.95rem); /* 13px */
   margin-bottom: clamp(0.75rem, 0.92vw, 1.125rem); /* 15px */
   line-height: 1.5;
   color: #333;
@@ -259,25 +259,25 @@ footer {
   }
 
   .post-date {
-    font-size: clamp(0.7rem, 0.825vw, 0.85rem);
+    font-size: clamp(0.65rem, 0.825vw, 0.85rem);
     color: #666;
     margin-right: clamp(0.5rem, 0.5vw, 0.6rem);
   }
 
   .post-time {
-    font-size: clamp(0.7rem, 0.825vw, 0.875rem);
+    font-size: clamp(0.675rem, 0.825vw, 0.875rem);
     color: #999;
   }
 
   .post-quote {
-    font-size: clamp(0.8rem, 1vw, 1.25rem);
+    font-size: clamp(0.85rem, 1vw, 1.25rem);
     font-style: italic;
     color: #337ab7;
     margin-bottom: clamp(0.5rem, 0.5vw, 0.6rem);
   }
 
   p {
-    font-size: clamp(0.715rem, 0.825vw, 1rem);
+    font-size: clamp(0.725rem, 0.825vw, 1rem);
     margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem);
     line-height: 1.5;
     color: #333;
