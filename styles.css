@@ -39,7 +39,8 @@ article:last-child {
 body {
   font-family: "DM Sans", sans-serif;
   margin: clamp(2%, 2vw, 3%);
-  background-color: #f8f7ee;
+  background-color: #1e1e1e;
+  color: #eee;
   overflow-y: auto;
 }
 
@@ -56,6 +57,7 @@ header {
 h1 {
   margin: 0;
   font-weight: 300;
+  color: #eee;
 }
 
 main {
@@ -76,7 +78,7 @@ main {
   padding: clamp(1rem, 1.25vw, 1.5rem); /* 20px */
   border-radius: clamp(0.5rem, 0.625vw, 0.75rem); /* 10px */
   box-shadow: 0 0 clamp(0.5rem, 0.625vw, 0.75rem) rgba(0, 0, 0, 0.05); /* 0 0 10px */
-  background-color: #f7f7f7;
+  background-color: #282828;
   margin: 0 auto;
   font-family: "DM Sans", sans-serif;
   scrollbar-width: none;
@@ -88,7 +90,7 @@ main {
 }
 
 article {
-  background-color: #f7f7f7;
+  background-color: #282828;
   padding: clamp(0.75rem, 0.9375vw, 1.125rem); /* 15px */
   margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem); /* 15px */
   border: none;
@@ -103,13 +105,13 @@ article {
 
 .post-date {
   font-size: clamp(0.55rem, 0.6875vw, 0.8rem); /* 11px */
-  color: #666;
+  color: #aaa;
   margin-right: clamp(0.5rem, 0.5vw, 0.6rem); /* 8px */
 }
 
 .post-time {
   font-size: clamp(0.55rem, 0.6875vw, 0.8rem); /* 11px */
-  color: #999;
+  color: #aaa;
 }
 
 .post-quote {
@@ -123,7 +125,7 @@ p {
   font-size: clamp(0.65rem, 0.8125vw, 0.95rem); /* 13px */
   margin-bottom: clamp(0.75rem, 0.92vw, 1.125rem); /* 15px */
   line-height: 1.5;
-  color: #333;
+  color: #eee;
 }
 
 article {
@@ -132,7 +134,7 @@ article {
 
 footer {
   padding: clamp(0.6rem, 0.75vw, 0.9rem) 0; /* 12px 0 */
-  background-color: #f8f7ee;
+  background-color: #1e1e1e;
   position: bottom;
   font-size: clamp(0.55rem, 0.6875vw, 0.8rem); /* 11px */
   line-height: 4;
@@ -195,7 +197,7 @@ footer {
   body {
     font-family: "DM Sans", sans-serif;
     margin: clamp(3%, 3vw, 4%);
-    background-color: #f8f7ee;
+
     overflow-y: auto;
   }
 
@@ -207,7 +209,6 @@ footer {
     font-family: "EB Garamond", sans-serif;
     max-width: 100%;
     margin: 0 auto;
-    color: #333;
   }
 
   h1 {
@@ -234,7 +235,7 @@ footer {
     margin: 0 auto;
     border-radius: clamp(0.5rem, 0.625vw, 0.75rem);
     box-shadow: 0 0 clamp(0.5rem, 0.625vw, 0.75rem) rgba(0, 0, 0, 0.05);
-    background-color: #f7f7f7;
+
     font-family: "DM Sans", sans-serif;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -245,7 +246,6 @@ footer {
   }
 
   article {
-    background-color: #f7f7f7;
     padding: clamp(0.75rem, 0.9375vw, 1.125rem);
     margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem);
     border: none;
@@ -260,13 +260,12 @@ footer {
 
   .post-date {
     font-size: clamp(0.65rem, 0.825vw, 0.85rem);
-    color: #666;
+
     margin-right: clamp(0.5rem, 0.5vw, 0.6rem);
   }
 
   .post-time {
     font-size: clamp(0.675rem, 0.825vw, 0.875rem);
-    color: #999;
   }
 
   .post-quote {
@@ -280,12 +279,11 @@ footer {
     font-size: clamp(0.725rem, 0.825vw, 1rem);
     margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem);
     line-height: 1.5;
-    color: #333;
   }
 
   footer {
     padding: clamp(0.5rem, 0.6vw, 0.75rem) 0;
-    background-color: #f8f7ee;
+
     font-size: clamp(0.7rem, 0.7875vw, 1rem);
     line-height: 4;
     margin-top: clamp(3.5%, 3.7vw, 4.5%);
