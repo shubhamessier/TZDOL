@@ -39,7 +39,7 @@ article:last-child {
 body {
   font-family: "DM Sans", sans-serif;
   margin: clamp(2%, 2vw, 3%);
-  background-color: #1e1e1e;
+  background: linear-gradient(to top, rgb(1, 16, 74), black);
   color: #eee;
   overflow-y: auto;
 }
@@ -82,7 +82,7 @@ main {
   padding: clamp(1rem, 1.25vw, 1.5rem); /* 20px */
   border-radius: clamp(0.5rem, 0.625vw, 0.75rem); /* 10px */
   box-shadow: 0 0 clamp(0.5rem, 0.625vw, 0.75rem) rgba(0, 0, 0, 0.05); /* 0 0 10px */
-  background-color: #282828;
+  background-color: rgba(40, 40, 40, 0.5); /* 50% transparency */
   margin: 0 auto;
   font-family: "DM Sans", sans-serif;
   scrollbar-width: none;
@@ -98,7 +98,7 @@ a::after {
 }
 
 article {
-  background-color: #282828;
+  background-color: rgba(40, 40, 40, 0.05); /* 50% transparency */
   padding: clamp(0.75rem, 0.9375vw, 1.125rem); /* 15px */
   margin-bottom: clamp(0.75rem, 0.9375vw, 1.125rem); /* 15px */
   border: none;
@@ -141,8 +141,9 @@ article {
 }
 
 footer {
-  padding: clamp(0.6rem, 0.75vw, 0.9rem) 0; /* 12px 0 */
-  background-color: #1e1e1e;
+  padding-top: 15px;
+  padding-bottom: -10px; /* 12px 0 */
+  /* background-color: #1e1e1e; */
   position: bottom;
   font-size: clamp(0.55rem, 0.6875vw, 0.8rem); /* 11px */
   line-height: 4;
